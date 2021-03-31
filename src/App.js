@@ -1,12 +1,14 @@
 // import ClockList from './component/ClockList';
-import From from './component/From';
+
+import Calculator from './component/Calculator';
 
 function App() {
   // const quantities = [1, 2, 3];
   return (
     <div className="App">
       {/* <ClockList quantities={quantities} /> */}
-      <From />
+
+      <Calculator />
     </div>
   );
 }
