@@ -1,10 +1,17 @@
-// import ClockList from './component/ClockList';
+import Bracket from './component/composition/Bracket';
+import Emoji from './component/composition/Emoji';
+import Text from './component/composition/Text';
 
 function App() {
-  // const quantities = [1, 2, 3];
   return (
     <div className="App">
-      <h1>lof</h1>
+      <Emoji>
+        {({ addEmoji }) => (
+          <Bracket>
+            {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
+          </Bracket>
+        )}
+      </Emoji>
     </div>
   );
 }
