@@ -10,9 +10,9 @@ export default class Counter extends Component {
   };
 
   render() {
-    const { render } = this.props; // ? render charau children diye access kora jai
+    const { children } = this.props; // ? render charau children diye access kora jai
     const { count } = this.state;
 
-    return render(count, this.incrementCount);
+    return children(count, this.incrementCount);
   }
 }
