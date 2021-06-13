@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Form = () => {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   return (
     <div>
-      <input type="text" placeholder="Enter Something" />
+      <input ref={inputRef} type="text" placeholder="Enter Something" />
     </div>
   );
 };
