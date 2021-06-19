@@ -1,10 +1,10 @@
 import React from 'react';
-import Form from './component/Form';
+import CounterThree from './component/Counterthree';
 
 const App = () => {
   return (
     <div>
-      <Form />
+      <CounterThree />
     </div>
   );
 };
