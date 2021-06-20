@@ -1,10 +1,10 @@
 import React from 'react';
-import CounterThree from './component/Counterthree';
+import Getpostreducer from './component/GetpostReducer';
 
 const App = () => {
   return (
     <div>
-      <CounterThree />
+      <Getpostreducer />
     </div>
   );
 };
