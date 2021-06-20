@@ -1,10 +1,14 @@
 import React from 'react';
-import Getpostreducer from './component/GetpostReducer';
+import Layout from './component/Layout';
+import LayoutTwo from './component/LayoutTow';
 
+const REACT_VERSION = React.version;
 const App = () => {
   return (
     <div>
-      <Getpostreducer />
+      <h1>{REACT_VERSION}</h1>
+      <Layout />
+      <LayoutTwo />
     </div>
   );
 };
